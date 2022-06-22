@@ -1,8 +1,8 @@
-import TopBar from "../Bars/TopBar";
+import MessageInput from "../Inputs/MessageInput";
 
 function App() {
     return(
-        <TopBar />
+        <MessageInput />
     )
 }
 
