@@ -1,8 +1,8 @@
-import MessageInput from "../Inputs/MessageInput";
+import BasicButton from "../Buttons/BasicButton";
 
 function App() {
     return(
-        <MessageInput />
+        <BasicButton btnDescription='send' />
     )
 }
 
