@@ -1,8 +1,8 @@
-import BasicButton from "../Buttons/BasicButton";
+import ChatBubble from "../Chat/ChatBubble";
 
 function App() {
     return(
-        <BasicButton btnDescription='send' />
+        <ChatBubble />
     )
 }
 
