@@ -8,7 +8,8 @@ module.exports = {
         'sans': ['roboto', ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        'radial-gradient': 'radial-gradient(180% 180% at right -65% top -65%, transparent 99%, #1f2937)',
+        'gray-radial-gradient': 'radial-gradient(180% 180% at right -65% top -65%, transparent 99%, #1f2937)',
+        'blue-radial-gradient': 'radial-gradient(180% 180% at right -65% top -65%, transparent 99%, #3b82f6)',
       },
     },
   },
