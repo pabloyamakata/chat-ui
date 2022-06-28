@@ -1,8 +1,8 @@
-import ChatBubble from "../Chat/ChatBubble";
+import RightBubble from "../Bubbles/RightBubble";
 
 function App() {
     return(
-        <ChatBubble />
+        <RightBubble />
     )
 }
 
