@@ -1,8 +1,8 @@
-import RightBubble from "../Bubbles/RightBubble";
+import LeftBubble from "../Bubbles/LeftBubble";
 
 function App() {
     return(
-        <RightBubble />
+        <LeftBubble />
     )
 }
 
