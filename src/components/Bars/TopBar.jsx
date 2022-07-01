@@ -1,6 +1,4 @@
-import userPic from "../../assets/images/userpfp-1.jpg";
-
-function TopBar() {
+function TopBar({ userPic }) {
     return(
         <div className="flex items-center min-w-0 h-14 px-4 bg-gray-800">
             <span className="md:hidden material-icons material-icons-outlined text-gray-400">arrow_back</span>
