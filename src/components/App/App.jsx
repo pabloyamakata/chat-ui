@@ -3,7 +3,9 @@ import userPic from "../../assets/images/userpfp-1.jpg";
 
 function App() {
     return(
-        <ChatBox userPic={userPic} />
+        <div className="overflow-hidden">
+            <ChatBox userPic={userPic} />
+        </div>
     )
 }
 
