@@ -1,6 +1,7 @@
 function RightBubble() {
     return(
-        <div className="relative flex max-w-[480px] py-[6px] pr-2 pl-[10px] bg-blue-500 rounded-xl rounded-br-none whitespace-pre-wrap break-words">
+        // Add a min-width to this component and overflow-hidden class to its parent to make it hide when resizing the browser
+        <div className="relative flex min-w-[60px] max-w-[480px] py-[6px] pr-2 pl-[10px] bg-blue-500 rounded-xl rounded-br-none whitespace-pre-wrap break-words">
             <p className="min-w-0 text-white">I'm doing one component at a time. This, for example, is a chat bubble.</p>
             <div className="flex self-end">
                 <span className="text-xs font-medium text-gray-200">11:15</span>
