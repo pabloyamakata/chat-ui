@@ -1,11 +1,8 @@
-import TopBar from "../Bars/TopBar";
-import userPic from "../../assets/images/userpfp-1.jpg";
+import MessageInput from "../Inputs/MessageInput";
 
 function App() {
     return(
-        <div className="overflow-hidden">
-            <TopBar userPic={userPic} />
-        </div>
+        <MessageInput />
     )
 }
 
