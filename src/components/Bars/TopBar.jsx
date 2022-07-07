@@ -6,8 +6,8 @@ function TopBar({ userPic }) {
             <div className="md:pl-0 flex grow min-w-0 pl-4">
                 <div className="flex-none w-11 h-11 rounded-full"><img className="w-full min-h-full object-cover rounded-full" src={userPic} alt="User" /></div>
                 <div className="min-w-0 pl-4">
-                    <div className="min-w-0 font-medium text-white whitespace-nowrap overflow-hidden text-ellipsis">Lisa Aureliana</div>
-                    <div className="min-w-0 text-sm text-gray-400 whitespace-nowrap overflow-hidden text-ellipsis">last seen a long time ago</div>
+                    <div className="font-medium text-white whitespace-nowrap overflow-hidden text-ellipsis">Lisa Aureliana</div>
+                    <div className="text-sm text-gray-400 whitespace-nowrap overflow-hidden text-ellipsis">last seen a long time ago</div>
                 </div>
             </div>
             <div className="sm:w-36 sm:p-0 flex w-fit h-11 pl-3 bg-gray-800">
