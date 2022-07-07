@@ -1,10 +1,10 @@
-import ChatBox from "../Users/ChatBox";
+import TopBar from "../Bars/TopBar";
 import userPic from "../../assets/images/userpfp-1.jpg";
 
 function App() {
     return(
         <div className="overflow-hidden">
-            <ChatBox userPic={userPic} />
+            <TopBar userPic={userPic} />
         </div>
     )
 }
