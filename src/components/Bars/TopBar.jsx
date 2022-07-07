@@ -1,11 +1,12 @@
 function TopBar({ userPic }) {
     return(
-        <div className="flex items-center min-w-0 h-14 px-4 bg-gray-800">
+        // Add a min-width to this component and overflow-hidden class to its parent to make it hide when resizing the browser
+        <div className="flex items-center min-w-[116px] h-14 px-4 bg-gray-800">
             <span className="md:hidden material-icons material-icons-outlined text-gray-400">arrow_back</span>
             <div className="md:pl-0 flex grow min-w-0 pl-4">
                 <div className="flex-none w-11 h-11 rounded-full"><img className="w-full min-h-full object-cover rounded-full" src={userPic} alt="User" /></div>
                 <div className="min-w-0 pl-4">
-                    <div className="min-w-0 font-medium text-white whitespace-nowrap overflow-hidden text-ellipsis">Lisa</div>
+                    <div className="min-w-0 font-medium text-white whitespace-nowrap overflow-hidden text-ellipsis">Lisa Aureliana</div>
                     <div className="min-w-0 text-sm text-gray-400 whitespace-nowrap overflow-hidden text-ellipsis">last seen a long time ago</div>
                 </div>
             </div>
