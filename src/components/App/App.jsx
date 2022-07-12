@@ -1,10 +1,11 @@
-import ChatBox from "../Users/ChatBox";
-import userPic from "../../assets/images/userpfp-1.jpg";
+import SearchInput from "../Inputs/SearchInput";
+import MessageInput from "../Inputs/MessageInput";
 
 function App() {
     return(
-        <div className="overflow-hidden">
-            <ChatBox userPic={userPic} />
+        <div className="m-4">
+            <SearchInput />
+            <MessageInput />
         </div>
     )
 }
