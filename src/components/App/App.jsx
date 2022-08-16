@@ -1,9 +1,9 @@
-import SearchBar from "../Bars/SearchBar";
+import Main from "../../views/Main/Main";
 
 function App() {
     return(
-        <div className="overflow-hidden">
-            <SearchBar />
+        <div>
+            <Main />
         </div>
     )
 }
