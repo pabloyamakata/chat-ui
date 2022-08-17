@@ -38,7 +38,9 @@ function Main() {
     return(
         <div className='grid grid-cols-12 h-screen'>
             <div className='col-span-3 overflow-y-auto bg-slate-800'>
-                <SearchBar />
+                <div className='sticky top-0'>
+                    <SearchBar />
+                </div>
                 <div className='py-1 pr-1 pl-2'>
                     {contacts.map(contact => {
                         return(
