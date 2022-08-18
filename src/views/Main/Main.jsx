@@ -37,11 +37,11 @@ function Main() {
 
     return(
         <div className='grid grid-cols-12 h-screen'>
-            <div className='col-span-3 overflow-y-auto scrollbar-thin scrollbar-track-slate-800 scrollbar-thumb-slate-700 bg-slate-800'>
+            <div className='col-span-3 bg-slate-800'>
                 <div className='sticky top-0'>
                     <SearchBar />
                 </div>
-                <div className='py-1 pr-3 pl-2'>
+                <div className='hover:scrollbar-thumb-slate-700 h-[calc(100vh-60px)] py-1 pr-3 pl-2 overflow-y-auto scrollbar-thin scrollbar-track-slate-800'>
                     {contacts.map(contact => {
                         return(
                             <ChatBox userPic={userPic} key={contact} />
@@ -49,11 +49,11 @@ function Main() {
                     })}
                 </div>
             </div>
-            <div className='col-span-9 relative flex flex-col overflow-y-auto scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-slate-700 bg-slate-900'>
+            <div className='col-span-9 relative flex flex-col bg-slate-900'>
                 <div className='sticky top-0 z-10'>
                     <TopBar userPic={userPic} />
                 </div>
-                <div className='relative flex flex-col flex-grow px-28 pt-5'>
+                <div className='hover:scrollbar-thumb-slate-700 relative flex flex-col h-[calc(100vh-136px)] px-28 pt-5 overflow-y-auto scrollbar-thin scrollbar-track-slate-900'>
                     {getChatBubbles()}
                 </div>
                 <div className='sticky bottom-0 w-full px-28 py-4 bg-slate-900'>
