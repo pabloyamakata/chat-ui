@@ -37,11 +37,11 @@ function Main() {
 
     return(
         <div className='grid grid-cols-12 h-screen'>
-            <div className='col-span-3 overflow-y-auto bg-slate-800'>
+            <div className='col-span-3 overflow-y-auto scrollbar-thin scrollbar-track-slate-800 scrollbar-thumb-slate-700 bg-slate-800'>
                 <div className='sticky top-0'>
                     <SearchBar />
                 </div>
-                <div className='py-1 pr-1 pl-2'>
+                <div className='py-1 pr-3 pl-2'>
                     {contacts.map(contact => {
                         return(
                             <ChatBox userPic={userPic} key={contact} />
@@ -49,7 +49,7 @@ function Main() {
                     })}
                 </div>
             </div>
-            <div className='col-span-9 relative flex flex-col bg-slate-900 overflow-y-auto'>
+            <div className='col-span-9 relative flex flex-col overflow-y-auto scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-slate-700 bg-slate-900'>
                 <div className='sticky top-0 z-10'>
                     <TopBar userPic={userPic} />
                 </div>
