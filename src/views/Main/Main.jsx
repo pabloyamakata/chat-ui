@@ -1,3 +1,4 @@
+// Components
 import SearchBar from '../../components/Bars/SearchBar';
 import TopBar from '../../components/Bars/TopBar';
 import LeftBubble from '../../components/Bubbles/LeftBubble';
@@ -6,7 +7,11 @@ import BasicButton from '../../components/Buttons/BasicButton';
 import MessageInput from '../../components/Inputs/MessageInput';
 import ChatBox from '../../components/Users/ChatBox';
 
+// Assets
 import userPic from '../../assets/images/userpfp-1.jpg';
+
+// Hooks
+import { useState } from 'react';
 
 function Main() {
 
@@ -35,6 +40,18 @@ function Main() {
         return chatBubbles;
     };
 
+    const showWhiteLine = event => {
+        const { scrollHeight, scrollTop, clientHeight } = event.target;
+        const scrollPosition = scrollHeight - scrollTop - clientHeight
+
+        if (scrollPosition > 0) {
+            console.log('Not at the bottom yet...');
+        }
+        else if (scrollPosition === 0){
+            console.log('At the bottom baby!');
+        }
+    };
+
     return(
         <div className='grid grid-cols-12 h-screen'>
             <div className='col-span-3 bg-slate-800'>
@@ -53,7 +70,7 @@ function Main() {
                 <div className='sticky top-0 z-10'>
                     <TopBar userPic={userPic} />
                 </div>
-                <div className='hover:scrollbar-thumb-slate-700 relative flex flex-col h-[calc(100vh-136px)] px-28 pt-5 overflow-y-auto scrollbar-thin scrollbar-track-slate-900'>
+                <div onScroll={showWhiteLine} className='hover:scrollbar-thumb-slate-700 relative flex flex-col h-[calc(100vh-136px)] px-28 pt-5 overflow-y-auto scrollbar-thin scrollbar-track-slate-900'>
                     {getChatBubbles()}
                 </div>
                 <div className='after:content-[""] after:absolute after:top-0 after:left-2/4 after:-translate-x-2/4 after:w-[840px] after:h-px after:bg-white/20 sticky bottom-0 w-full px-28 py-4 bg-slate-900'>
