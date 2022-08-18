@@ -11,7 +11,7 @@ import userPic from '../../assets/images/userpfp-1.jpg';
 function Main() {
 
     const contacts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-    const messages = [1, 2, 4, 5, 3, 12, 10, 17];
+    const messages = [1, 2, 4, 5, 3, 12, 10, 17, 45, 24, 99, 2044];
 
     const getChatBubbles = () => {
 
@@ -56,7 +56,7 @@ function Main() {
                 <div className='hover:scrollbar-thumb-slate-700 relative flex flex-col h-[calc(100vh-136px)] px-28 pt-5 overflow-y-auto scrollbar-thin scrollbar-track-slate-900'>
                     {getChatBubbles()}
                 </div>
-                <div className='sticky bottom-0 w-full px-28 py-4 bg-slate-900'>
+                <div className='after:content-[""] after:absolute after:top-0 after:left-2/4 after:-translate-x-2/4 after:w-[840px] after:h-px after:bg-white/20 sticky bottom-0 w-full px-28 py-4 bg-slate-900'>
                     <MessageInput />
                 </div>
             </div>
