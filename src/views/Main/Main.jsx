@@ -84,8 +84,13 @@ function Main() {
                     {getChatBubbles()}
                     <div ref={messagesEndRef}></div>
                 </div>
-                <div className={`${afterContent} after:absolute after:top-0 after:left-2/4 after:-translate-x-2/4 after:w-[840px] after:h-px after:bg-white/20 sticky bottom-0 w-full px-28 py-4 bg-slate-900`}>
-                    <MessageInput />
+                <div className={`${afterContent} after:absolute after:top-0 after:left-2/4 after:-translate-x-2/4 after:w-[840px] after:h-px after:bg-white/20 sticky bottom-0 flex items-center w-full px-28 py-[14px] bg-slate-900`}>
+                    <div className='flex-grow'>
+                        <MessageInput />
+                    </div>
+                    <div className='pl-3'>
+                        <BasicButton btnDescription={'send'} />
+                    </div>
                 </div>
             </div>
         </div>
