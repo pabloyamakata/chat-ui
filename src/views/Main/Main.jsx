@@ -11,7 +11,7 @@ import ChatBox from '../../components/Users/ChatBox';
 import userPic from '../../assets/images/userpfp-1.jpg';
 
 // Hooks
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 function Main() {
 
@@ -61,16 +61,19 @@ function Main() {
 
     return(
         <div className='grid grid-cols-12 h-screen'>
-            <div className='col-span-3 bg-slate-800'>
+            <div className='col-span-3 relative bg-slate-800'>
                 <div className='sticky top-0'>
                     <SearchBar />
                 </div>
-                <div className='hover:scrollbar-thumb-slate-700 h-[calc(100vh-60px)] py-1 pr-3 pl-2 overflow-y-auto scrollbar-thin scrollbar-track-slate-800'>
+                <div className='hover:scrollbar-thumb-slate-700 h-[calc(100vh-60px)] py-1 pr-3 pl-2 overflow-y-auto scrollbar-thin scrollbar-track-slate-800 peer'>
                     {contacts.map(contact => {
                         return(
                             <ChatBox userPic={userPic} key={contact} />
                         )
                     })}
+                </div>
+                <div className='hover:visible absolute bottom-5 right-5 invisible peer-hover:visible'>
+                    <BasicButton btnDescription={'edit'} />
                 </div>
             </div>
             <div className='col-span-9 relative flex flex-col bg-slate-900'>
