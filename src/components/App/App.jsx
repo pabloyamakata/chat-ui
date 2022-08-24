@@ -1,9 +1,9 @@
-import Main from "../../views/Main/Main";
+import Login from "../../views/Login/Login";
 
 function App() {
     return(
         <div>
-            <Main />
+            <Login />
         </div>
     )
 }
